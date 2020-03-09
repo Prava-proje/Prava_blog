@@ -1,0 +1,64 @@
+{% extends 'base/index.html' %}
+{% load custom_tag %}
+{% load static %}
+{% block content %}
+
+<div class="hero-wrap img" style="background-image: url({% static 'images/bg_1.jpg' %});">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-center">
+            <div class="col-md-10 d-flex align-items-center ftco-animate">
+                <div class="text text-center pt-5 mt-md-5">
+                    <p class="mb-4">Find Job, Employment, and Career Opportunities</p>
+                    <h1 class="mb-5">The Eassiest Way to Get Your New Job</h1>
+                    <div class="ftco-counter ftco-no-pt ftco-no-pb">
+                        <div class="row">
+                            <div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
+                                <div class="block-18">
+                                    <div class="text d-flex">
+                                        <div class="icon mr-2">
+                                            <span class="flaticon-worldwide"></span>
+                                        </div>
+                                        <div class="desc text-left">
+                                            <br>
+                                            <a href="/"><span>Online imtahan</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
+                                <div class="block-18 text-center">
+                                    <div class="text d-flex">
+                                        <div class="icon mr-2">
+                                            <span class="flaticon-visitor"></span>
+                                        </div>
+                                        <div class="desc text-left">
+                                            <br>
+                                            <a href="{% url 'question-answer' %}"><span>İmtahana hazırlıq</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
+                                <div class="block-18 text-center">
+                                    <div class="text d-flex">
+                                        <div class="icon mr-2">
+                                            <span class="flaticon-resume"></span>
+                                        </div>
+                                        <div class="desc text-left">
+                                            <br>
+                                            <span>Ödənişli imtahan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

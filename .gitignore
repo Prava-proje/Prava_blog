@@ -1,0 +1,6 @@
+pgdb/
+.idea/
+media/
+localhost/
+.venv
+db.sqlite3
